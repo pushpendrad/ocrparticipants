@@ -1,0 +1,16 @@
+server:
+  port: 8181
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.ocr-eureka.credentials.uri:localhost}
+  instance:
+    hostname: ${vcap.application.uris[0]:localhost}
+    metadataMap:
+      instanceId: participants_localhost
+---
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    nonSecurePort: 80
