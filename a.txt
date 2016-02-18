@@ -7,11 +7,3 @@ SUBTRACTION CODE
 added some code
 changes
 abc
-change1
-change2
-change3
-change4
-change5
-change6
-123
-456
